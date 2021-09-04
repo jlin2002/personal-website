@@ -1,4 +1,4 @@
-import './styles/style.scss';
+import './styles/style.css';
 import Header from './components/header/Header';
 import Home from './pages/Home';
 import About from './pages/About';
