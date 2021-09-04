@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 57%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main,
+    footer,
+    .spinner {
+        margin: 0;
+        width: 100%;
+    }
+
+    section.about,
+    section.contact {
+        padding-top: 10rem;
+        padding-bottom: 1.5rem;
+    }
+
+    section.home,
+    .spinner,
+    .message {
+        padding-top: 7.5rem;
+    }
+    .message {
+        padding-bottom: 0;
+    }
+}

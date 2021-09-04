@@ -1,0 +1,114 @@
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.home-images {
+    display: grid;
+    margin: auto;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    width: 100%;
+}
+
+.home-images div {
+    padding: 0;
+    position: relative;
+}
+
+.home-image-wrapper p {
+    font-family: $ff-heading;
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    pointer-events: none;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.home-image-wrapper p.hover,
+.home-image-wrapper p.active {
+    display: block;
+    opacity: 1;
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    transition: opacity 0.7s;
+}
+
+.darker-image {
+    opacity: 0.9;
+    transition: opacity 0.7s;
+}
+
+.darker-image:hover,
+.darker-image.active {
+    opacity: 0.35;
+}
+
+.home-image:hover,
+.home-image.active {
+    opacity: 0.4;
+}
+
+@media screen and (min-aspect-ratio: 4/5) and (min-width: 1024px) {
+    .home-images {
+        min-width: 60rem;
+        max-width: 135vh;
+        padding: 2rem;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 8px;
+    }
+}
+
+@media screen and (max-aspect-ratio: 4/5) and (min-width: 1024px) {
+    .home-images {
+        padding: 1.2rem;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        gap: 8px;
+    }
+}
+
+@media screen and (min-aspect-ratio: 5/4) and (max-width: 1024px) {
+    .home-images {
+        width: 120vh;
+        min-width: 200px;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 6px;
+    }
+}
+
+@media screen and (min-aspect-ratio: 3/5) and (max-aspect-ratio: 5/4) and (max-width: 1024px) {
+    .home-images {
+        width: 55vh;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        gap: 4px;
+    }
+}
+
+@media screen and (max-aspect-ratio: 3/5) and (max-width: 1024px) {
+    .home-images {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-images {
+        padding: 0.5rem;
+        gap: 3px;
+    }
+}

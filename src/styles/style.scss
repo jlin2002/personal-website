@@ -1,0 +1,26 @@
+$ff-heading: 'Source Serif Pro', serif;
+$ff-paragraphs: 'Lato', sans-serif;
+
+$fs-logo: 3.2rem;
+$fs-heading: 4rem;
+$fs-subheading: 2.3rem;
+$fs-input: 1.9rem;
+$fs-subsubheading: 2rem;
+$fs-main-text: 1.8rem;
+$fs-nav: 1.7rem;
+$fs-copyright: 1.2rem;
+
+$clr-main-text: #111;
+$clr-background: #fdeccc;
+$clr-background-hover: #e7d5b5;
+$clr-background-input: #f3dfba;
+$clr-background-input-focus: #ebd3a6;
+$clr-background-invalid-input: #fdbeaa;
+$clr-background-button-focus:#cfb78a;
+
+@import 'global';
+@import 'header';
+@import 'home';
+@import 'about';
+@import 'contact';
+@import 'footer';

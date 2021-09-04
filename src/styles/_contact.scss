@@ -1,0 +1,73 @@
+
+.contact {
+    min-height: 100vh;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input,
+    textarea,
+    button {
+        padding: 1rem;
+        margin: 1rem;
+        background-color: $clr-background-input;
+        border: none;
+        width: 80%;
+        max-width: 100rem;
+        border-radius: 0.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: lighter;
+        font-size: $fs-input;
+        &:-webkit-autofill,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:hover,
+        &:focus {
+            font-family: "Lato", sans-serif;
+            font-weight: lighter;
+            font-size: $fs-input;
+            background-color: $clr-background-input-focus;
+        }
+    }
+
+    textarea {
+        height: 30vh;
+        min-height: 10rem;
+        resize: none;
+    }
+
+    button {
+        cursor: pointer;
+        border-radius: 0.5rem;
+        width: fit-content;
+        padding: 1rem 2rem;
+        background-color: $clr-background-input-focus;
+        transition: background-color 0.3s;
+        &:hover,
+        &:focus {
+            background-color: $clr-background-button-focus;
+            color: black;
+        }
+    }
+}
+
+label {
+    display: none;
+}
+
+textarea.invalid-input, 
+input.invalid-input {
+    background-color: $clr-background-invalid-input;
+}
+
+.form-warning {
+    display: none;
+    padding-top: 1.3rem;
+}
+
+.send-warning {
+    display: none;
+    padding-top: 2rem;
+}

@@ -1,0 +1,73 @@
+
+.contact-me {
+    font-size: $fs-nav;
+}
+
+.contact-me a {
+    border-radius: 0.2rem;
+    text-decoration: underline;
+}
+
+.contact-me a:focus {
+    background-color: $clr-background-hover;
+}
+
+    /* Social style */
+
+.social {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.social__link__icon {
+    margin: 0 0.4rem;
+}
+
+.social__link::after {
+    margin: 0 auto;
+}
+
+img.linked-in {
+    display: block;
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+}
+
+.fa-github-square {
+    color: #333;
+}
+
+.social__link:hover::after,
+.social__link:focus::after {
+    width: 3rem;
+}
+
+    /* Copyright Style */
+
+.copyright {
+    margin-bottom: 1rem;
+    font-size: $fs-copyright;
+}
+
+@media (max-width: 500px) {
+    .copyright {
+        margin-bottom: 0.5rem;
+        font-size: $fs-copyright;
+    }
+}
+
+footer .copyright {
+    margin: 1rem 0;
+    font-size: $fs-copyright;
+}

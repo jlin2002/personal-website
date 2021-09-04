@@ -1,0 +1,22 @@
+
+.about img {
+    display: block;
+    margin: 2.5rem auto;
+    width: 10rem;
+    max-width: 30%;
+    min-width: 20rem;
+}
+/* Skills style */
+
+.my-skills__skill {
+    padding: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .my-skills__skills {
+        display: flex;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+}

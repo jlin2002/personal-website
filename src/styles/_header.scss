@@ -1,0 +1,78 @@
+
+header {
+    position: fixed;
+    background-color: $clr-background;
+    z-index: 1;
+}
+/* Nav style */
+nav { 
+    font-size: $fs-nav;
+    font-weight: 300;
+}
+
+.nav-items__link {
+    transition: background-color 500ms;
+    border-radius: 0.5rem;
+}
+
+.nav-items__link:focus,
+.nav-items__link:hover {
+    outline: none;
+    color: #444444;
+    background-color: $clr-background-hover;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 100vh;
+        width: 20vw;
+        max-width: 30rem;
+        left: 0;
+    }
+
+    .logo {
+        margin: 6rem auto 0;
+    }
+    
+    nav { 
+        margin: 2rem auto;
+        width: 17rem;
+    }
+
+    .nav-items {
+        width: 100%;
+    }
+
+    .nav-items__link {
+        display: block;
+        padding: 1rem 0.7rem;
+    }
+}
+    /* Logo style */
+
+.logo h1 {
+    pointer-events: none;
+    font-size: $fs-logo;
+}
+
+.logo {
+    display: block;
+    padding: 1rem;
+}
+
+.logo::after {
+    margin: -0.5rem auto 0 ;
+    position: relative;
+    left: 0.4rem;
+}
+
+.logo:focus::after,
+.logo:hover::after {
+    width: 13.5rem;
+}
+
+@import 'header-small';

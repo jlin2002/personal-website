@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-family: $ff-paragraphs;
+    background-color: $clr-background;
+    color: $clr-main-text;
+}
+
+p {
+    padding: 0 1rem;
+    font-weight: 300;
+    font-size: $fs-main-text;
+    text-align: center;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.message,
+.about,
+.contact,
+.home,
+footer {
+    position: relative;
+    width: calc(100% - 20vw);
+    margin-left: 20vw;
+    animation: opening 1s;
+    -webkit-animation: opening 1s;
+}
+
+section {
+    padding: 4.5rem 0 1.2rem;
+}
+
+section.home {
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1, 
+h2 {
+    font-family: $ff-heading;
+    text-align: center;
+}
+
+h1 {
+    font-size: $fs-heading;
+}
+
+h2 {
+    font-size: $fs-subheading;
+}
+
+h3 {
+    text-align: center;
+    font-size: $fs-subsubheading;
+    padding: 1rem;
+}
+
+section h1,
+section h2 {
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 0;
+}
+
+a:link, 
+a:visited {
+    color: $clr-main-text;
+    text-decoration: none;
+}
+    
+/* Underline-style focus on all links with icons */
+
+:focus {
+    outline: none;
+}
+.social__link::after,
+.logo::after {
+    content: '';
+    display: block;
+    transition: width 700ms;
+    height: 2px;
+    width: 0;
+    border-radius: 1px;
+    background-color: $clr-main-text;
+}
+
+.message {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        text-align: center;
+        width: 90%;
+    }
+    a {
+        display: block;
+        font-size: $fs-subsubheading;
+        text-decoration: underline;
+        &:focus {
+            background-color: $clr-background-hover;
+            border-radius: 5px;
+        }
+    }
+}
+
+.spinner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+@keyframes opening {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@import '_global-small';
