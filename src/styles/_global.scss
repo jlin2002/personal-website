@@ -30,6 +30,7 @@ p {
 .about,
 .contact,
 .home,
+.spinner,
 footer {
     position: relative;
     width: calc(100% - 20vw);
@@ -106,7 +107,8 @@ a:visited {
 }
 
 .message {
-    min-height: 100vh;
+    height: 100vh;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
