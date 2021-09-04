@@ -198,9 +198,13 @@ a:visited {
 }
 
 @media screen and (max-width: 1024px) {
-  main,
+  .message,
+  .about,
+  .contact,
+  .home,
+  .spinner,
   footer,
-  .spinner {
+  main {
     margin: 0;
     width: 100%;
   }
