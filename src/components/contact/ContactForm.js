@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import LoadingSpinner from './LoadingSpinner';
+
 const DEFAULT = {
     name: '',
     email: '',
@@ -14,9 +14,9 @@ const validateMessage = (message) => {
     const re = /^\s*$/;
     return !re.test(String(message));
 }
-const Contact = ({setDisplaySent}) => {
+
+const Contact = ({setDisplaySent, setIsLoading}) => {
     const [ form, setForm ] = useState({...DEFAULT});
-    const [ loading, setLoading ] = useState(false);
     const [ validEmail, setValidEmail ] = useState(true);
     const [ validMessage, setValidMessage ] = useState(true);
     const [ successful, setSuccessful ] = useState(true);
@@ -27,7 +27,7 @@ const Contact = ({setDisplaySent}) => {
         if (!isValidEmail) setValidEmail(false);
         if (!isValidMessage) setValidMessage(false);
         if (!isValidEmail || !isValidMessage) return;
-        setLoading(true);
+        setIsLoading(true);
         fetch('/.netlify/functions/contact', {
             method: 'POST',
             headers: {
@@ -51,10 +51,6 @@ const Contact = ({setDisplaySent}) => {
             ...form,
             [name]: value
         })
-    }
-    if (loading) {
-        console.log(true)
-        return <LoadingSpinner />
     }
     return (
         <section className="contact">

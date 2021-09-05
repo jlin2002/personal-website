@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 import { useState, createContext } from 'react'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Footer from './components/footer/Footer';
@@ -30,6 +31,9 @@ const App = () => {
                         <Route path="/contact">
                             <Contact />
                         </Route>
+                        <Route path="/projects">
+                            <Projects />
+                        </Route> 
                     </Switch>
                 </main>
                 <Route path="/about">

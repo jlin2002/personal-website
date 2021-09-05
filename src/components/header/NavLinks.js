@@ -7,6 +7,7 @@ const NavLinks = () => {
         <div onClick={handleLinkClick} className={`nav-items-wrapper ${showNav && "darken"}`}>
             <ul onClick={(e) => e.stopPropagation()} className="nav-items">
                 <li><NavLink page='about'/></li>
+                <li><NavLink page='projects'/></li>
                 <li><NavLink page='contact'/></li>
             </ul>
         </div>

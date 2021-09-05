@@ -26,11 +26,7 @@ p {
   margin: 0 auto;
 }
 
-.message,
-.about,
-.contact,
-.home,
-.spinner,
+section,
 footer {
   position: relative;
   width: calc(100% - 20vw);
@@ -149,7 +145,10 @@ a:visited {
 }
 
 .spinner {
+  position: absolute;
+  top: 0;
   height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,22 +197,24 @@ a:visited {
 }
 
 @media screen and (max-width: 1024px) {
-  .message,
-  .about,
-  .contact,
-  .home,
+  .spinner {
+    position: absolute;
+    top: 0;
+  }
   .spinner,
+  section,
   footer,
   main {
     margin: 0;
     width: 100%;
   }
-  section.about,
-  section.contact {
+  .blogs,
+  .about,
+  .contact {
     padding-top: 10rem;
     padding-bottom: 1.5rem;
   }
-  section.home,
+  .home,
   .spinner,
   .message {
     padding-top: 7.5rem;
