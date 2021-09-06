@@ -1,0 +1,46 @@
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    width: auto;
+}
+.my-masonry-grid_column {
+    background-clip: padding-box;
+}
+  
+.projects__card {
+    border: 1px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 2rem;
+    position: relative;
+    width: 96%;
+    height: fit-content;
+    margin: 1.6rem auto;
+    padding: 1rem;
+    animation: float 1s;
+    transition: transform 0.2s ease-out;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.projects__card__text {
+    position: relative;
+    z-index: 2;
+}
+.projects__card img {
+    width: 100%;
+    max-height: 27rem;
+    object-position: center;
+    object-fit: cover;
+}
+
+.projects__instruction {
+    animation: float 0.4s forwards;
+    opacity: 0;
+}
+
+
+@import 'projects-small'

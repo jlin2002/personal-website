@@ -13,13 +13,12 @@ nav {
 .nav-items__link {
     transition: background-color 500ms;
     border-radius: 0.5rem;
-}
-
-.nav-items__link:focus,
-.nav-items__link:hover {
-    outline: none;
-    color: #444444;
-    background-color: $clr-background-hover;
+    &:focus,
+    &:hover {
+        outline: none;
+        color: #444444;
+        background-color: $clr-background-hover       
+    }
 }
 
 .nav-toggle {
