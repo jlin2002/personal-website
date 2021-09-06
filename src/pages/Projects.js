@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import ProjectCards from "../components/projects/ProjectCards";
-import LoadingSpinner from "../components/contact/LoadingSpinner";
+import LoadingSpinner from "../components/misc/LoadingSpinner";
 const Projects = () => {
-    const [ projects, setProjects ] = useState([])
+    const [ projects, setProjects ] = useState(null)
     useEffect(() => {
         fetch('/.netlify/functions/projects')
         .then(response => response.json())
@@ -11,10 +11,12 @@ const Projects = () => {
         })
         .catch(err => console.log(err));
     }, []);
+
     return (
         <section className='projects'>
             <h1>projects</h1>
-            {projects.length === 0? <LoadingSpinner/>: <ProjectCards blogs={projects} />}
+            <p className='projects__instruction'>Click to view on GitHub</p>
+            {projects === null? <LoadingSpinner/>: <ProjectCards blogs={projects} />}
         </section>
     )
 }

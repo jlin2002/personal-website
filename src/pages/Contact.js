@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import ContactForm from '../components/contact/ContactForm'
 import ContactSuccess from '../components/contact/ContactSuccess';
-import LoadingSpinner from '../components/contact/LoadingSpinner';
+import LoadingSpinner from '../components/misc/LoadingSpinner';
 const Contact = () => {
     useEffect(() => {
         document.title = 'Joanna Lin | Contact'

@@ -1,11 +1,18 @@
-import React from 'react'
-
-const BlogCards = ({blogs}) => {
+import ProjectCard from './ProjectCard'
+import Masonry from 'react-masonry-css'
+const ProjectCards = ({blogs}) => {
     return (
-        <div>
-            {blogs.map(blog => <p key={blog.id}>{blog.title}</p>)}
-        </div>
+        <Masonry
+            breakpointCols={{
+                default: 2,
+                600: 1
+            }}
+            className="my-masonry-grid projects__cards"
+            columnClassName="my-masonry-grid_column"
+        >
+            {blogs.map(blog => <ProjectCard key={blog.id} {...blog}/>)}
+        </Masonry>
     )
 }
 
-export default BlogCards
+export default ProjectCards

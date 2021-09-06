@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+    .projects__card {
+        width: 44vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects__cards {
+        column-count: 1;
+    }
+    .projects__card {
+        width: 95%;
+    }
+}

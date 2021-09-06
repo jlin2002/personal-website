@@ -31,14 +31,13 @@ footer {
     width: calc(100% - 20vw);
     margin-left: 20vw;
     animation: opening 1s;
-    -webkit-animation: opening 1s;
 }
 
 section {
-    padding: 4.5rem 0 1.2rem;
+    padding: 4.5rem 1.2rem 1.2rem;
 }
 
-section.home {
+.home {
     padding: 0;
 }
 
@@ -131,6 +130,8 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: center; 
+    margin: 0;
+    margin-left: -1.2rem;
 }
 
 @keyframes opening {
@@ -142,5 +143,14 @@ a:visited {
         opacity: 1;
     }
 }
-
+@keyframes float {
+    from {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 @import '_global-small';

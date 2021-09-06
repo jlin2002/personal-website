@@ -11,7 +11,7 @@ const About = () => {
             <h2 className="about__subtitle">{data.title}</h2>
             <p className="about__content">
                 I'm a <strong>{data.status}</strong>
-                where I also work as a <strong>{data.work}</strong> {data.role}<br/>
+                where I also work as a <strong>{data.work}</strong> {data.role} 
                 {data.hobbies}
             </p>
         </section>
