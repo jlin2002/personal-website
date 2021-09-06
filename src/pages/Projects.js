@@ -4,6 +4,7 @@ import LoadingSpinner from "../components/misc/LoadingSpinner";
 const Projects = () => {
     const [ projects, setProjects ] = useState(null)
     useEffect(() => {
+        document.title = 'Joanna Lin | Projects';
         fetch('/.netlify/functions/projects')
         .then(response => response.json())
         .then(response => {
