@@ -860,7 +860,6 @@ footer {
 
 .projects__card__text {
   position: relative;
-  z-index: 2;
 }
 
 .projects__card img {
