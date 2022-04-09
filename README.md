@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c64733d9-e634-4771-91ea-c202c965b818/deploy-status)](https://app.netlify.com/sites/distracted-brahmagupta-a26346/deploys)
+
 # Personal Website
 This is my personal development portfolio website.
 
