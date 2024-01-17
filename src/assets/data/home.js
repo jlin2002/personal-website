@@ -1,33 +1,33 @@
 const homeImages = [
 { 
-    src: '/img/20190904_101125.jpg',
-    label: 'Hallstatt, Austria',
+    src: '/img/IMG_2732.png',
+    label: 'Lake Louise, Banff',
     id: 0
 },
-{ 
-    src: '/img/20191225_130947.jpg',
-    label: 'Lake Bled, Slovenia',
+{
+    src: '/img/IMG_2591.png',
+    label: 'Johnston Canyon, Banff',
     id: 1
 },
-{
-    src: '/img/20190901_105813.jpg',
-    label: 'Hyde Park, London',
+{ 
+    src: '/img/IMG_1566.png',
+    label: 'Niagara Falls, Canada',
     id: 2
 },
-{
-    src: '/img/20191007_175100.jpg',
-    label: 'Arthur\'s Seat, Edinburgh',
+{ 
+    src: '/img/IMG_3734.png',
+    label: 'Tommy Thompson Park, Toronto',
     id: 3
 },
-{ 
-    src: '/img/20191229_164145.jpg',
-    label: 'Nordkette, Innsbruck',
+{
+    src: '/img/IMG_2507.png',
+    label: 'Vermillion Lake, Banff',
     id: 4
 },
 { 
-    src: '/img/20200105_162034.jpg',
-    label: 'Berlin, Germany',
+    src: '/img/IMG_1349.png',
+    label: 'Lake Ontario, Toronto',
     id: 5
-}
+},
 ];
 export default homeImages;
